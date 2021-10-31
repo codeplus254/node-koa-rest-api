@@ -5,7 +5,7 @@
 	"scripts": {
 		"lint": "eslint src/index.js",
 		"start": "babel-node src/index.js",
-		"test": "jest",
+		"test": "jest --watchAll",
 		"watch": "nodemon --exec babel-node --watch src/index.js",
 		"watch-test": "jest --watch"
 	},
@@ -22,13 +22,14 @@
 		"@babel/preset-env": "7.3.4",
 		"babel-eslint": "^10.0.3",
 		"eslint": "^6.8.0",
-		"jest": "^25.1.0",
-		"nodemon": "^2.0.2"
+		"jest": "^25.5.4",
+		"nodemon": "^2.0.2",
+		"supertest": "^6.1.6"
 	},
 	"jest": {
 		"testEnvironment": "node",
 		"testPathIgnorePatterns": [
 			"<rootDir>/node_modules"
-	]
+		]
 	}
 }
